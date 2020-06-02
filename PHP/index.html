@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.C.S | Home</title>
+    <link rel="shortcut icon" type="image/png" href="img/mcs.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/993c130bb9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <header>
+            <img src="img/mcs.png" alt="MCS logo" class="logo">
+            <nav class="navigation">
+                <a href="#" class="hide-desktop">
+                    <img src="img/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li class="exit-btn hide-desktop" id="exit">
+                        <img src="img/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="#about">About us</a></li>                    
+                    <li><a href="#services">Our services</a></li>
+                    <li><a class="active" href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="image4">
+        <div class="ptext">
+            <span class="border">
+                FIND YOURSELF IN THE BAD BOOKS OF THE CREDIT BUREAUS?
+            </span>
+        </div>
+        <div class="qtext">
+            <span class="border">
+                WE CAN HELP YOU REGAIN YOUR CREDIT WORTHINESS
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-light" id="about">
+        <h2>About Us</h2>
+        <p> People who incur unnecessary debt find themselves in a position where they are no longer able to service
+            those debts. Failure to pay your debt has long-term consequences. Your name will be negatively listed with
+            the credit
+            bureaus. The next time you apply for credit your application will be declned. This means you have been
+            blacklisted and
+            won’t qualify car finance, home loans and personal loans.</p>
+
+        <p> MCS is a credit repair company that is situated in Sandton the business hub of South Africa. Our sole
+            aim, vision and mission is to help consumers regain their credit worthiness by assiting with the correct
+            procedures of how to go about removing paid up listings on your name. We also assist in helping you
+            to get a clear picture of where you stand with your credit score from the leading credit bereaus.
+            <br>
+            <br>
+            Get started today, call us or book a consultation.
+
+
+        </p>
+    </section>
+
+    <div class="image2">
+        <div class="ptext">
+            <span class="border">
+                Don't sign your life away
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-dark">
+        <h2 id="services">Our Services</h2>
+        <list>
+            <li>Debt review removal</li>
+            <li>Removal of defaults</li>
+            <li>Removal of judgements</li>
+            <li>Removal adverse listings</li>
+            <li>Debt consolidation</li>
+            <li>Removal of administration </li>
+            <li>Removal of garnishees</li>
+            <li>Sequestration/Rehabilitation orders</li>
+            <li>Prevent car repossession and protect your home</li>
+            <li>3 in 1 credit report for a fee of R400 FROM XDS,TRANSUNION AND EXPERIAN</li>
+            <list>
+    </section>
+
+    <div class="image3">
+        <div class="ptext">
+            <span class="border">
+                Leave your details and we will call you
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-dark">
+        <h2 id="contact">Contact Us</h2>
+
+        <div class="container box">
+
+            <div class="wrapper">
+                <div class="company-info">
+                    <h3>MCS</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Unit office 235</li>
+                        <li class="space">190 Rivonia Village</li>
+                        <li class="space">Rivonia Boulevard & Mutual Road</li>
+                        <li class="space">Rivonia</li>
+                        <li class="space">Sandton</li>
+                        <li class="space">2128</li>
+                        <li><i class="fas fa-phone-square-alt"></i> (010) 634 0426</li>
+                        <li><i class="fas fa-envelope-square"></i> admin@mcs1.co.za</li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>YOUR CONTACT DETAILS</h3>
+                    <form action="contactForm.php" method="POST">
+                        <p>
+                            <input type="text" name="company" placeholder="Name" required>
+                        </p>
+                        <p>
+                            <input type="text" name="phone" placeholder="Phone number" required>
+                        </p>
+                        <p>
+                            <input type="email" name="email" placeholder="Email address (optional)">
+                        </p>
+
+                        <button type="submit" name="submit">click</button>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="image1">
+        <div class="ptext">
+            <span class="border">
+                We can help you clear your name
+            </span>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="copy">MCS &copy;2020</div>
+
+            <div class="socials">
+                <a href="https://www.facebook.com/MS-GROUP-102664564488169/" target="_blank"><i
+                        class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/mcs_clear_my_name_/" target="_blank"><i
+                        class="fab fa-instagram-square"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        var btnContact = document.getElementById('btnContact');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+
+    </script>
+</body>
+
+</html>
